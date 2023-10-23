@@ -13,7 +13,7 @@ local ThemeManager = {} do
 		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 		['Ubuntu'] 			= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
 		['Quartz'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
-        ['Makima 2.0'] 			= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"177eb1","AccentColor":"FA0026","BackgroundColor":"232323","OutlineColor":"141414"}') },
+        ['Makima 2.0'] 			= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"1e1e1e","AccentColor":"177eb1","BackgroundColor":"232323","OutlineColor":"141414"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
@@ -50,8 +50,8 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:LoadDefault()		
-		local theme = 'PiwwyZ'
-		local content = isfile(self.Folder .. '/themes/PiwwyZ.txt') and readfile(self.Folder .. '/themes/PiwwyZ.txt')
+		local theme = 'Makima 2.0'
+		local content = isfile(self.Folder .. '/themes/Makima 2.0.txt') and readfile(self.Folder .. '/themes/Makima 2.0.txt')
 
 		local isDefault = true
 		if content then
@@ -73,7 +73,7 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:SaveDefault(theme)
-		writefile(self.Folder .. '/themes/PiwwyZ.txt', theme)
+		writefile(self.Folder .. '/themes/Makima 2.0.txt', theme)
 	end
 
 	function ThemeManager:CreateThemeManager(groupbox)
