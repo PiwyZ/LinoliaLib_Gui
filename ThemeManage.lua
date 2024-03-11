@@ -49,7 +49,7 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:LoadDefault()		
-		local theme = 'Makima 2.0'
+		local theme = 'Makima Hub'
 		local content = isfile(self.Folder .. '/themes/Makima 2.0.txt') and readfile(self.Folder .. '/themes/Makima 2.0.txt')
 
 		local isDefault = true
